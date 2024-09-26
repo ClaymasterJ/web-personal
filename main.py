@@ -1,6 +1,7 @@
 """Main entry for the web application.
 
-This file needs to be not named __main__ because it causes issues with Gunicorn."""
+This file needs to be not named __main__ because it causes issues with Gunicorn.
+"""
 
 import os
 

@@ -16,7 +16,7 @@
             <div>
                 <a :href="expdict.company.link">
                     <img class="card-img-side"
-                         :src="this.$parent.static_url + expdict.company.logo"
+                         :src="static_url_cdn + expdict.company.logo"
                          :alt="expdict.company.name">
                 </a>
             </div>
@@ -61,7 +61,9 @@ export default {
         "expindex"
     ],
     data: function () {
-        return {}
+        return {
+            static_url_cdn: "https://static.claytonjroberts.com/"
+        }
     },
     computed: {
         isSelected: function () {

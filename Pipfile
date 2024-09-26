@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-tornado = ">=6.2"
-markdown2 = ">=2.4"
-pyyaml = ">=6.0"
-pyfiglet = ">=0.8"
-colorama = ">=0.4"
-gunicorn = ">=20.1"
+tornado = "~=6.2"
+markdown2 = "~=2.4"
+pyyaml = "~=6.0"
+pyfiglet = "~=0.8"
+colorama = "~=0.4"
+gunicorn = "~=20.1"
 
 [dev-packages]
 black = "*"

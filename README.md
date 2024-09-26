@@ -19,8 +19,11 @@ The [favicon](static/favicon.ico) was generated with a [favicon generator](https
 
 # Debugging
 
-To run the application, simply run the [startup.sh](helpers/startup.sh) script from this project's root.
+To run the application, simply run the following:
 
-```shell
-. ./helpers/startup.sh
+```bash
+# webpack
+npm run-script build
+# gunicorn --bind=0.0.0.0 --timeout 600 __main__:application
+gunicorn -k tornado main:app
 ```
